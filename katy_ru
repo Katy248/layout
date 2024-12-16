@@ -6,13 +6,10 @@
 // 2018/07/15 @a13 (a.k.a. @dbvvmpg) and Stepanenko Andrey <ftvkyo2011@yandex.ru>
 
 // Windows layout
-default partial alphanumeric_keys
-
-hidden partial alphanumeric_keys
-xkb_symbols "common" {
+xkb_symbols "katy_ru" {
     include "level3(ralt_switch)"
-    name[Group1] = "Russian (RU)";
-    name[Group2] = "English (US)";
+    name[Group1] = "Russian (Katy)";
+    //name[Group2] = "English (US)";
     
     key <BKSL> {[ space, space, U00A0]};
 

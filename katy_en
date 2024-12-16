@@ -1,10 +1,10 @@
 // Keyboard layouts for the United States of America.
 
 default partial alphanumeric_keys modifier_keys
-xkb_symbols "basic" {
+xkb_symbols "katy_en" {
     include "level3(ralt_switch)"
 
-    name[Group1]= "English (RU)";
+    name[Group1]= "English (Russia)";
 
     key <TLDE>	{[   apostrophe, quotedbl, grave ]};
     key <AE01>	{[	 1,	 exclam		]};
