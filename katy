@@ -1,0 +1,113 @@
+
+xkb_symbols "numbers" {
+    include "level3(ralt_switch)"
+
+    // Numbers
+    key <TLDE>	{[   apostrophe, quotedbl, grave ]};
+    key <AE01>	{[	 1,	 exclam		]};
+    key <AE02>	{[	 2,	 at		]};
+    key <AE03>	{[	 3,	 numbersign	]};
+    key <AE04>	{[	 4,	 dollar		]};
+    key <AE05>	{[	 5,	 percent	]};
+    key <AE06>	{[	 6,	 asciicircum	]};
+    key <AE07>	{[	 7,	 ampersand	]};
+    key <AE08>	{[	 8,	 asterisk	]};
+    key <AE09>	{[	 9,	 parenleft	]};
+    key <AE10>	{[	 0,	 parenright	]};
+    key <AE11>	{[   minus, underscore, U2013, U2014 ]};
+    key <AE12>	{[   equal,	 plus		]};
+
+}
+default partial alphanumeric_keys modifier_keys
+xkb_symbols "en" {
+    include "katy(numbers)"
+
+    name[Group1]= "English (Russia)";
+
+    key <AD01>	{[	 q,	 Q		]};
+    key <AD02>	{[	 w,	 W		]};
+    key <AD03>	{[	 e,	 E		]};
+    key <AD04>	{[	 r,	 R		]};
+    key <AD05>	{[	 t,	 T		]};
+    key <AD06>	{[	 y,	 Y		]};
+    key <AD07>	{[	 u,	 U		]};
+    key <AD08>	{[	 i,	 I		]};
+    key <AD09>	{[	 o,	 O		]};
+    key <AD10>	{[	 p,	 P		]};
+    key <AD11>	{[ bracketleft,	 braceleft	]};
+    key <AD12>	{[ bracketright, braceright	]};
+
+    key <AC01>	{[	 a,	 A		]};
+    key <AC02>	{[	 s,	 S		]};
+    key <AC03>	{[	 d,	 D		]};
+    key <AC04>	{[	 f,	 F		]};
+    key <AC05>	{[	 g,	 G		]};
+    key <AC06>	{[	 h,	 H		]};
+    key <AC07>	{[	 j,	 J		]};
+    key <AC08>	{[	 k,	 K		]};
+    key <AC09>	{[	 l,	 L		]};
+    key <AC10>	{[ semicolon,	 colon		]};
+    key <AC11>	{[ asciitilde ]};
+    key <BKSL>	{[ slash, bar, backslash ]};
+
+    key <AB01>	{[	 z,	 Z		]};
+    key <AB02>	{[	 x,	 X		]};
+    key <AB03>	{[	 c,	 C		]};
+    key <AB04>	{[	 v,	 V		]};
+    key <AB05>	{[	 b,	 B		]};
+    key <AB06>	{[	 n,	 N		]};
+    key <AB07>	{[	 m,	 M		]};
+    key <AB08>	{[ comma, semicolon, lower ]};
+    key <AB09>	{[ period, colon, greater ]};
+    key <AB10>	{[   slash,	 question	]};
+};
+
+partial alphanumeric_keys modifier_keys
+xkb_symbols "ru" {
+    include "katy(numbers)"
+
+    name[Group1] = "Russian (Katy)";
+    
+    key <BKSL> {[ space, space, U00A0]};
+
+    key <AB10>	{[      slash,    question  ]};
+    key <LSGT>	{[      slash,         bar  ]};
+
+    //key <TLDE>	{[       Cyrillic_io,       Cyrillic_IO  ]};
+    key <AD01>	{[   Cyrillic_shorti,   Cyrillic_SHORTI  ]};
+    key <AD02>	{[      Cyrillic_tse,      Cyrillic_TSE  ]};
+    key <AD03>	{[        Cyrillic_u,        Cyrillic_U  ]};
+    key <AD04>	{[       Cyrillic_ka,       Cyrillic_KA  ]};
+    key <AD05>	{[       Cyrillic_ie,       Cyrillic_IE, Cyrillic_io, Cyrillic_IO  ]};
+    key <AD06>	{[       Cyrillic_en,       Cyrillic_EN  ]};
+    key <AD07>	{[      Cyrillic_ghe,      Cyrillic_GHE  ]};
+    key <AD08>	{[      Cyrillic_sha,      Cyrillic_SHA  ]};
+    key <AD09>	{[    Cyrillic_shcha,    Cyrillic_SHCHA  ]};
+    key <AD10>	{[       Cyrillic_ze,       Cyrillic_ZE  ]};
+    key <AD11>	{[       Cyrillic_ha,       Cyrillic_HA  ]};
+    key <AD12>	{[ Cyrillic_be, Cyrillic_BE  ]};
+
+    key <AC01>	{[       Cyrillic_ef,       Cyrillic_EF  ]};
+    key <AC02>	{[     Cyrillic_yeru,     Cyrillic_YERU  ]};
+    key <AC03>	{[       Cyrillic_ve,       Cyrillic_VE  ]};
+    key <AC04>	{[        Cyrillic_a,        Cyrillic_A  ]};
+    key <AC05>	{[       Cyrillic_pe,       Cyrillic_PE  ]};
+    key <AC06>	{[       Cyrillic_er,       Cyrillic_ER  ]};
+    key <AC07>	{[        Cyrillic_o,        Cyrillic_O  ]};
+    key <AC08>	{[       Cyrillic_el,       Cyrillic_EL  ]};
+    key <AC09>	{[       Cyrillic_de,       Cyrillic_DE  ]};
+    key <AC10>	{[      Cyrillic_zhe,      Cyrillic_ZHE  ]};
+    key <AC11>	{[        Cyrillic_e,        Cyrillic_E  ]};
+    key <AC12>	{[        slash,        bar, backslash]};
+
+    key <AB01>	{[       Cyrillic_ya,       Cyrillic_YA  ]};
+    key <AB02>	{[      Cyrillic_che,      Cyrillic_CHE  ]};
+    key <AB03>	{[       Cyrillic_es,       Cyrillic_ES  ]};
+    key <AB04>	{[       Cyrillic_em,       Cyrillic_EM  ]};
+    key <AB05>	{[        Cyrillic_i,        Cyrillic_I  ]};
+    key <AB06>	{[       Cyrillic_te,       Cyrillic_TE  ]};
+    key <AB07>	{[ Cyrillic_softsign, Cyrillic_SOFTSIGN, Cyrillic_hardsign, Cyrillic_HARDSIGN  ]};
+    key <AB08>	{[              comma,       semicolon  ]};
+    key <AB09>	{[                period,          colon  ]};
+    key <AB10>	{[               Cyrillic_yu,      Cyrillic_YU  ]};
+};

@@ -2,21 +2,44 @@
 <!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
 <xkbConfigRegistry version="1.1">
   <layoutList>
+    <!-- <layout> -->
+    <!--   <configItem> -->
+    <!--     <name>katy_en</name> -->
+    <!--     <shortDescription>en</shortDescription> -->
+    <!--     <description>English (Katy)</description> -->
+    <!--   </configItem> -->
+    <!--   <variantList /> -->
+    <!-- </layout> -->
+    <!-- <layout> -->
+    <!--   <configItem> -->
+    <!--     <name>katy_ru</name> -->
+    <!--     <shortDescription>ru</shortDescription> -->
+    <!--     <description>Russian (Katy)</description> -->
+    <!--   </configItem> -->
+    <!--   <variantList /> -->
+    <!-- </layout> -->
     <layout>
       <configItem>
-        <name>katy_en</name>
-        <shortDescription>en</shortDescription>
-        <description>English (Katy)</description>
+        <name>katy</name>
+        <shortDescription>katy</shortDescription>
+        <description>Katy's layout</description>
       </configItem>
-      <variantList />
-    </layout>
-    <layout>
-      <configItem>
-        <name>katy_ru</name>
-        <shortDescription>ru</shortDescription>
-        <description>Russian (Katy)</description>
-      </configItem>
-      <variantList />
+      <variantList>
+        <variant>
+          <configItem>
+            <name>ru</name>
+            <shortDescription>ru</shortDescription>
+            <description>Russian (Katy)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>en</name>
+            <shortDescription>en</shortDescription>
+            <description>English (Katy)</description>
+          </configItem>
+        </variant>
+      </variantList>
     </layout>
   </layoutList>
 </xkbConfigRegistry>

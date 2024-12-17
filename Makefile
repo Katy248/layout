@@ -4,13 +4,13 @@ XKB_RULES_DIR ?= ~/.config/xkb/rules
 
 .PHONY: install
 
-install: $(XKB_LAYOUT_DIR)/katy_en $(XKB_LAYOUT_DIR)/katy_ru 
+install: $(XKB_LAYOUT_DIR)/katy_en $(XKB_LAYOUT_DIR)/katy_ru $(XKB_RULES_DIR)/evdev.xml
 
 $(XKB_LAYOUT_DIR)/%: % $(XKB_LAYOUT_DIR)
-	ln $< $@
+	ln $< $@ -f
 
 $(XKB_RULES_DIR)/evdev.xml: evdev.xml $(XKB_RULES_DIR)
-	ln $< $@
+	ln $< $@ -f
 
 $(XKB_RULES_DIR) $(XKB_LAYOUT_DIR):
 	mkdir -p $@	
