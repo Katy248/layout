@@ -1,4 +1,16 @@
-LAYOUTS_DIR := /usr/share/X11/xkb/symbols
-install:
-	cat ./katy_en > $(LAYOUTS_DIR)/custom
-	cat ./katy_ru >> $(LAYOUTS_DIR)/custom
+XKB_LAYOUT_DIR ?= ~/.config/xkb/symbols
+XKB_RULES_DIR ?= ~/.config/xkb/rules
+# /usr/share/X11/xkb/symbols
+
+.PHONY: install
+
+install: $(XKB_LAYOUT_DIR)/katy_en $(XKB_LAYOUT_DIR)/katy_ru 
+
+$(XKB_LAYOUT_DIR)/%: % $(XKB_LAYOUT_DIR)
+	ln $< $@
+
+$(XKB_RULES_DIR)/evdev.xml: evdev.xml $(XKB_RULES_DIR)
+	ln $< $@
+
+$(XKB_RULES_DIR) $(XKB_LAYOUT_DIR):
+	mkdir -p $@	

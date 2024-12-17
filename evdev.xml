@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry version="1.1">
+  <layoutList>
+    <layout>
+      <configItem>
+        <name>katy_en</name>
+        <shortDescription>en</shortDescription>
+        <description>English (Katy)</description>
+      </configItem>
+      <variantList />
+    </layout>
+    <layout>
+      <configItem>
+        <name>katy_ru</name>
+        <shortDescription>ru</shortDescription>
+        <description>Russian (Katy)</description>
+      </configItem>
+      <variantList />
+    </layout>
+  </layoutList>
+</xkbConfigRegistry>
