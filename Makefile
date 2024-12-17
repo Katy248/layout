@@ -4,7 +4,7 @@ XKB_RULES_DIR ?= ~/.config/xkb/rules
 
 .PHONY: install
 
-install: $(XKB_LAYOUT_DIR)/katy_en $(XKB_LAYOUT_DIR)/katy_ru $(XKB_RULES_DIR)/evdev.xml
+install: $(XKB_LAYOUT_DIR)/katy $(XKB_RULES_DIR)/evdev.xml
 
 $(XKB_LAYOUT_DIR)/%: % $(XKB_LAYOUT_DIR)
 	ln $< $@ -f

@@ -1,4 +1,5 @@
 
+default partial alphanumeric_keys modifier_keys
 xkb_symbols "numbers" {
     include "level3(ralt_switch)"
 
@@ -6,8 +7,8 @@ xkb_symbols "numbers" {
     key <TLDE>	{[   apostrophe, quotedbl, grave ]};
     key <AE01>	{[	 1,	 exclam		]};
     key <AE02>	{[	 2,	 at		]};
-    key <AE03>	{[	 3,	 numbersign	]};
-    key <AE04>	{[	 4,	 dollar		]};
+    key <AE03>	{[ 3, numbersign, U00B3, U2153 ]};
+    key <AE04>	{[ 4, dollar, U2074, U00BC ]};
     key <AE05>	{[	 5,	 percent	]};
     key <AE06>	{[	 6,	 asciicircum	]};
     key <AE07>	{[	 7,	 ampersand	]};
@@ -16,9 +17,9 @@ xkb_symbols "numbers" {
     key <AE10>	{[	 0,	 parenright	]};
     key <AE11>	{[   minus, underscore, U2013, U2014 ]};
     key <AE12>	{[   equal,	 plus		]};
+};
 
-}
-default partial alphanumeric_keys modifier_keys
+partial alphanumeric_keys modifier_keys
 xkb_symbols "en" {
     include "katy(numbers)"
 
@@ -59,7 +60,7 @@ xkb_symbols "en" {
     key <AB07>	{[	 m,	 M		]};
     key <AB08>	{[ comma, semicolon, lower ]};
     key <AB09>	{[ period, colon, greater ]};
-    key <AB10>	{[   slash,	 question	]};
+    key <AB10>	{[ question]};
 };
 
 partial alphanumeric_keys modifier_keys
