@@ -1,4 +1,3 @@
-
 default partial alphanumeric_keys modifier_keys
 xkb_symbols "numbers" {
     include "level3(ralt_switch)"
@@ -20,8 +19,22 @@ xkb_symbols "numbers" {
 };
 
 partial alphanumeric_keys modifier_keys
+xkb_symbols "punctuation" {
+
+    key <AC12>	{[ slash, bar, backslash ]};
+    key <BKSL>	{[ slash, bar, backslash ]};
+    key <AB08>	{[ comma, semicolon, less ]};
+    key <AB09>	{[ period, colon, greater ]};
+    key <AC11>	{[ asciitilde ]};
+    key <AD11>	{[ bracketleft,	 braceleft	]};
+    key <AD12>	{[ bracketright, braceright	]};
+    key <SPCE> {[ space, space, U00A0]};
+};
+
+partial alphanumeric_keys modifier_keys
 xkb_symbols "en" {
     include "katy(numbers)"
+    include "katy(punctuation)"
 
     name[Group1]= "English (Russia)";
 
@@ -35,8 +48,6 @@ xkb_symbols "en" {
     key <AD08>	{[	 i,	 I		]};
     key <AD09>	{[	 o,	 O		]};
     key <AD10>	{[	 p,	 P		]};
-    key <AD11>	{[ bracketleft,	 braceleft	]};
-    key <AD12>	{[ bracketright, braceright	]};
 
     key <AC01>	{[	 a,	 A		]};
     key <AC02>	{[	 s,	 S		]};
@@ -47,9 +58,6 @@ xkb_symbols "en" {
     key <AC07>	{[	 j,	 J		]};
     key <AC08>	{[	 k,	 K		]};
     key <AC09>	{[	 l,	 L		]};
-    key <AC10>	{[ semicolon,	 colon		]};
-    key <AC11>	{[ asciitilde ]};
-    key <BKSL>	{[ slash, bar, backslash ]};
 
     key <AB01>	{[	 z,	 Z		]};
     key <AB02>	{[	 x,	 X		]};
@@ -58,23 +66,18 @@ xkb_symbols "en" {
     key <AB05>	{[	 b,	 B		]};
     key <AB06>	{[	 n,	 N		]};
     key <AB07>	{[	 m,	 M		]};
-    key <AB08>	{[ comma, semicolon, lower ]};
-    key <AB09>	{[ period, colon, greater ]};
-    key <AB10>	{[ question]};
+    // dot
+    // colon
+    key <AB10>	{[ question ]};
 };
 
 partial alphanumeric_keys modifier_keys
 xkb_symbols "ru" {
     include "katy(numbers)"
+    include "katy(punctuation)"
 
     name[Group1] = "Russian (Katy)";
-    
-    key <BKSL> {[ space, space, U00A0]};
 
-    key <AB10>	{[      slash,    question  ]};
-    key <LSGT>	{[      slash,         bar  ]};
-
-    //key <TLDE>	{[       Cyrillic_io,       Cyrillic_IO  ]};
     key <AD01>	{[   Cyrillic_shorti,   Cyrillic_SHORTI  ]};
     key <AD02>	{[      Cyrillic_tse,      Cyrillic_TSE  ]};
     key <AD03>	{[        Cyrillic_u,        Cyrillic_U  ]};
@@ -99,7 +102,6 @@ xkb_symbols "ru" {
     key <AC09>	{[       Cyrillic_de,       Cyrillic_DE  ]};
     key <AC10>	{[      Cyrillic_zhe,      Cyrillic_ZHE  ]};
     key <AC11>	{[        Cyrillic_e,        Cyrillic_E  ]};
-    key <AC12>	{[        slash,        bar, backslash]};
 
     key <AB01>	{[       Cyrillic_ya,       Cyrillic_YA  ]};
     key <AB02>	{[      Cyrillic_che,      Cyrillic_CHE  ]};
@@ -108,7 +110,7 @@ xkb_symbols "ru" {
     key <AB05>	{[        Cyrillic_i,        Cyrillic_I  ]};
     key <AB06>	{[       Cyrillic_te,       Cyrillic_TE  ]};
     key <AB07>	{[ Cyrillic_softsign, Cyrillic_SOFTSIGN, Cyrillic_hardsign, Cyrillic_HARDSIGN  ]};
-    key <AB08>	{[              comma,       semicolon  ]};
-    key <AB09>	{[                period,          colon  ]};
+    // dot
+    // colon
     key <AB10>	{[               Cyrillic_yu,      Cyrillic_YU  ]};
 };
