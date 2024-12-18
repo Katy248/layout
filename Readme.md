@@ -1,12 +1,25 @@
 # Cool katy's layout
 
+## Preview
+
+### Russian
+
+![ru](./.github/img/ru.png)
+![ru](./.github/img/ru_shift.png)
+![ru](./.github/img/ru_alt.png)
+
+### English
+
+![ru](./.github/img/en.png)
+![ru](./.github/img/en_shift.png)
+![ru](./.github/img/en_alt.png)
+
 ## Installation
 
-Place files `./katy_ru`, `./katy_en` into `/usr/share/X11/xkb/symbols/` with
+With `Makefile`:
 
 ```bash
-sudo ln ./katy_ru /usr/share/X11/xkb/symbols/katy_ru
-sudo ln ./katy_en /usr/share/X11/xkb/symbols/katy_en
+make install
 ```
 
 ## Development
@@ -14,6 +27,6 @@ sudo ln ./katy_en /usr/share/X11/xkb/symbols/katy_en
 To preview layout use:
 
 ```bash
-tecla "katy_ru(common)"
-tecla "katy_en(common)"
+tecla "katy(ru)"
+tecla "katy(en)"
 ```
