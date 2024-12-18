@@ -1,25 +1,25 @@
-default partial alphanumeric_keys modifier_keys
+partial alphanumeric_keys modifier_keys
 xkb_symbols "numbers" {
     include "level3(ralt_switch)"
 
-    // Numbers
-    key <TLDE>	{[   apostrophe, quotedbl, grave ]};
-    key <AE01>	{[	 1,	 exclam		]};
-    key <AE02>	{[	 2,	 at		]};
+    key <TLDE>	{[ apostrophe, quotedbl, grave ]};
+    key <AE01>	{[ 1,	 exclam		]};
+    key <AE02>	{[ 2,	 at		]};
     key <AE03>	{[ 3, numbersign ]};
     key <AE04>	{[ 4, dollar ]};
-    key <AE05>	{[	 5,	 percent	]};
-    key <AE06>	{[	 6,	 asciicircum	]};
-    key <AE07>	{[	 7,	 ampersand	]};
-    key <AE08>	{[	 8,	 asterisk	]};
-    key <AE09>	{[	 9,	 parenleft	]};
-    key <AE10>	{[	 0,	 parenright	]};
-    key <AE11>	{[   minus, underscore, U2013, U2014 ]};
-    key <AE12>	{[   equal, plus ]};
+    key <AE05>	{[ 5,	 percent	]};
+    key <AE06>	{[ 6,	 asciicircum	]};
+    key <AE07>	{[ 7,	 ampersand	]};
+    key <AE08>	{[ 8,	 asterisk	]};
+    key <AE09>	{[ 9,	 parenleft	]};
+    key <AE10>	{[ 0,	 parenright	]};
+    key <AE11>	{[ minus, underscore, U2013, U2014 ]};
+    key <AE12>	{[ equal, plus ]};
 };
 
 partial alphanumeric_keys modifier_keys
 xkb_symbols "punctuation" {
+    include "level3(ralt_switch)"
 
     key <AC12>	{[ slash, bar, backslash ]};
     key <BKSL>	{[ slash, bar, backslash ]};
@@ -31,7 +31,7 @@ xkb_symbols "punctuation" {
     key <SPCE> {[ space, space, U00A0]};
 };
 
-partial alphanumeric_keys modifier_keys
+default partial alphanumeric_keys modifier_keys
 xkb_symbols "en" {
     include "katy(numbers)"
     include "katy(punctuation)"
