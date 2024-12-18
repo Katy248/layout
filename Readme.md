@@ -19,7 +19,7 @@
 With `Makefile`:
 
 ```bash
-make install
+sudo make install
 ```
 
 ## Development

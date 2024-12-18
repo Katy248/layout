@@ -1,10 +1,9 @@
-XKB_LAYOUT_DIR ?= ~/.config/xkb/symbols
+XKB_LAYOUT_DIR ?= /usr/share/X11/xkb/symbols
 XKB_RULES_DIR ?= ~/.config/xkb/rules
-# /usr/share/X11/xkb/symbols
 
-.PHONY: install
+.PHONY: install install-global
 
-install: $(XKB_LAYOUT_DIR)/katy $(XKB_RULES_DIR)/evdev.xml
+install: $(XKB_LAYOUT_DIR)/katy.xkb $(XKB_RULES_DIR)/evdev.xml
 
 $(XKB_LAYOUT_DIR)/%: % $(XKB_LAYOUT_DIR)
 	ln $< $@ -f
@@ -12,5 +11,5 @@ $(XKB_LAYOUT_DIR)/%: % $(XKB_LAYOUT_DIR)
 $(XKB_RULES_DIR)/evdev.xml: evdev.xml $(XKB_RULES_DIR)
 	ln $< $@ -f
 
-$(XKB_RULES_DIR) $(XKB_LAYOUT_DIR):
-	mkdir -p $@	
+$(XKB_RULES_DIR):
+	mkdir -p $@
