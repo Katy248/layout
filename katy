@@ -7,8 +7,8 @@ xkb_symbols "numbers" {
     key <TLDE>	{[   apostrophe, quotedbl, grave ]};
     key <AE01>	{[	 1,	 exclam		]};
     key <AE02>	{[	 2,	 at		]};
-    key <AE03>	{[ 3, numbersign, U00B3, U2153 ]};
-    key <AE04>	{[ 4, dollar, U2074, U00BC ]};
+    key <AE03>	{[ 3, numbersign ]};
+    key <AE04>	{[ 4, dollar ]};
     key <AE05>	{[	 5,	 percent	]};
     key <AE06>	{[	 6,	 asciicircum	]};
     key <AE07>	{[	 7,	 ampersand	]};
@@ -16,7 +16,7 @@ xkb_symbols "numbers" {
     key <AE09>	{[	 9,	 parenleft	]};
     key <AE10>	{[	 0,	 parenright	]};
     key <AE11>	{[   minus, underscore, U2013, U2014 ]};
-    key <AE12>	{[   equal,	 plus		]};
+    key <AE12>	{[   equal, plus ]};
 };
 
 partial alphanumeric_keys modifier_keys
@@ -79,7 +79,7 @@ xkb_symbols "ru" {
     key <AD02>	{[      Cyrillic_tse,      Cyrillic_TSE  ]};
     key <AD03>	{[        Cyrillic_u,        Cyrillic_U  ]};
     key <AD04>	{[       Cyrillic_ka,       Cyrillic_KA  ]};
-    key <AD05>	{[       Cyrillic_ie,       Cyrillic_IE, Cyrillic_io, Cyrillic_IO  ]};
+    key <AD05>	{[ Cyrillic_ie, Cyrillic_IE, Cyrillic_io, Cyrillic_IO  ]};
     key <AD06>	{[       Cyrillic_en,       Cyrillic_EN  ]};
     key <AD07>	{[      Cyrillic_ghe,      Cyrillic_GHE  ]};
     key <AD08>	{[      Cyrillic_sha,      Cyrillic_SHA  ]};
