@@ -115,3 +115,15 @@ xkb_symbols "ru" {
     // colon
     key <AB10>	{[               Cyrillic_yu,      Cyrillic_YU  ]};
 };
+
+
+partial alphanumeric_keys modifier_keys
+xkb_symbols "ru_small" {
+    include "level3(ralt_switch)"
+    include "ru"
+
+    key <AE03> {[ 3, numbersign ]};
+    key <AE11> {[ minus, underscore, U2013, U2014 ]};
+    key <SPCE> {[ space, space, U00A0]};
+    key <AC12> {[ slash, bar, backslash ]};
+};

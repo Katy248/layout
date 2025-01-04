@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<!DOCTYPE xkbConfigRegistry SYSTEM "/usr/share/X11/xkb/rules/xkb.dtd">
 <xkbConfigRegistry version="1.1">
   <layoutList>
     <!-- <layout> -->
@@ -27,16 +27,23 @@
       <variantList>
         <variant>
           <configItem>
-            <name>ru</name>
+            <name>ru_small</name>
             <shortDescription>ru</shortDescription>
             <description>Russian (Katy)</description>
           </configItem>
         </variant>
         <variant>
           <configItem>
+            <name>ru</name>
+            <shortDescription>ru</shortDescription>
+            <description>Russian Universal (Katy)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
             <name>en</name>
             <shortDescription>en</shortDescription>
-            <description>English (Katy)</description>
+            <description>English Universal (Katy)</description>
           </configItem>
         </variant>
       </variantList>
